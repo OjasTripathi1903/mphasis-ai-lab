@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Impact of the Mphasis AI & Applied Tech Lab — research metrics, student outcomes, deployed systems, awards, and media coverage.">
+  <meta name="theme-color" content="#1B2A4A">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Impact | Mphasis AI & Applied Tech Lab">
+  <meta property="og:description" content="Research impact across publications, partnerships, deployed systems, and student outcomes.">
+  <meta property="og:type" content="website">
+
+  <title>Impact | Mphasis AI & Applied Tech Lab</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/images/logos/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../src/assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../src/css/variables.css">
+  <link rel="stylesheet" href="../src/css/reset.css">
+  <link rel="stylesheet" href="../src/css/base.css">
+  <link rel="stylesheet" href="../src/css/layout.css">
+  <link rel="stylesheet" href="../src/css/header.css">
+  <link rel="stylesheet" href="../src/css/footer.css">
+  <link rel="stylesheet" href="../src/css/components.css">
+  <link rel="stylesheet" href="../src/css/animations.css">
+  <link rel="stylesheet" href="../src/css/pages.css">
+  <link rel="stylesheet" href="../src/css/utilities.css">
+  <link rel="stylesheet" href="../src/css/search.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
+
+  <div class="page">
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" hidden>
+      <div class="search-overlay__backdrop"></div>
+      <div class="search-overlay__panel">
+        <div class="search-overlay__header">
+          <div class="search-overlay__input-wrapper">
+            <svg class="search-overlay__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/></svg>
+            <input type="search" class="search-overlay__input" id="search-input" placeholder="Search projects, people, publications..." autocomplete="off">
+            <kbd class="search-overlay__kbd">ESC</kbd>
+          </div>
+        </div>
+        <div class="search-overlay__results" id="search-results" aria-live="polite">
+          <div class="search-overlay__empty">
+            <p class="search-overlay__empty-text">Type to search across projects, people, and publications</p>
+          </div>
+        </div>
+        <div class="search-overlay__footer">
+          <span><kbd>&#8984;</kbd><kbd>K</kbd> to toggle</span>
+          <span><kbd>&#8593;</kbd><kbd>&#8595;</kbd> to navigate</span>
+          <span><kbd>Enter</kbd> to select</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo" aria-label="Mphasis AI & Applied Tech Lab — Home">
+          <img src="../src/assets/images/logos/lab-logo.png" alt="Mphasis AI & Applied Tech Lab Logo">
+        </a>
+        <nav class="nav" role="navigation" aria-label="Primary navigation">
+          <a href="../index.html" class="nav__link">Home</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="research.html" class="nav__link">Research</a>
+          <a href="people.html" class="nav__link">People</a>
+          <a href="publications.html" class="nav__link">Publications</a>
+          <a href="makerspace.html" class="nav__link">Makerspace</a>
+          <a href="news.html" class="nav__link">News & Events</a>
+          <a href="impact.html" class="nav__link nav__link--active">Impact</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </nav>
+        <div class="header__actions">
+          <button class="header__search-trigger" aria-label="Search" aria-expanded="false" aria-controls="search-overlay">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/></svg>
+          </button>
+          <button class="header__menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="../index.html" class="nav-mobile__link">Home</a>
+      <a href="about.html" class="nav-mobile__link">About</a>
+      <a href="research.html" class="nav-mobile__link">Research</a>
+      <a href="people.html" class="nav-mobile__link">People</a>
+      <a href="publications.html" class="nav-mobile__link">Publications</a>
+      <a href="makerspace.html" class="nav-mobile__link">Makerspace</a>
+      <a href="news.html" class="nav-mobile__link">News & Events</a>
+      <a href="impact.html" class="nav-mobile__link nav-mobile__link--active">Impact</a>
+      <a href="contact.html" class="nav-mobile__link">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="page__content" id="main-content" role="main">
+
+      <!-- Page Hero -->
+      <section class="page-hero">
+        <canvas class="page-hero__canvas" data-page="impact" aria-hidden="true"></canvas>
+        <div class="container">
+          <span class="page-hero__eyebrow reveal">Impact</span>
+          <h1 class="page-hero__title reveal">Our Impact</h1>
+          <p class="page-hero__description reveal">
+            From peer-reviewed publications and deployed systems to student careers and public health — measuring the reach of our research.
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           METRICS DASHBOARD
+           ═══════════════════════════════════════ -->
+      <section class="section">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 class="section__title">By the Numbers</h2>
+          </div>
+
+          <div class="grid grid--4 reveal-stagger" style="gap: var(--space-5); margin-top: var(--space-8);">
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="25">0<span class="stat-card__suffix">+</span></div>
+              <div class="stat-card__label">Research Projects</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="30">0<span class="stat-card__suffix">+</span></div>
+              <div class="stat-card__label">Publications</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="40">0<span class="stat-card__suffix">+</span></div>
+              <div class="stat-card__label">Partnerships</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="40">0<span class="stat-card__suffix">+</span></div>
+              <div class="stat-card__label">Presentations &amp; Talks</div>
+            </div>
+          </div>
+
+          <div class="grid grid--4 reveal-stagger" style="gap: var(--space-5); margin-top: var(--space-5);">
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="6">0</div>
+              <div class="stat-card__label">Deployed Systems</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="5">0</div>
+              <div class="stat-card__label">Research Pillars</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="27">0<span class="stat-card__suffix">+</span></div>
+              <div class="stat-card__label">Faculty Across 7 Departments</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="1300">0<span class="stat-card__suffix">+</span></div>
+              <div class="stat-card__label">Hackathon Applications</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           REACH & ENGAGEMENT
+           ═══════════════════════════════════════ -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 class="section__title">Reach &amp; Engagement</h2>
+            <p class="section__subtitle">Students, researchers, and communities touched by the Lab's work.</p>
+          </div>
+
+          <div class="grid grid--3 reveal-stagger" style="gap: var(--space-6); margin-top: var(--space-8);">
+
+            <div class="card reveal">
+              <div class="card__body">
+                <div class="stat-card__number" data-count="60" style="font-size: var(--text-4xl); color: var(--color-red); margin-bottom: var(--space-2);">0<span class="stat-card__suffix" style="color: var(--color-red);">+</span></div>
+                <h4 class="card__title">Research Personnel</h4>
+                <p class="card__text">Research assistants, project assistants, postdocs, PhD students, and interns trained and employed across all projects.</p>
+              </div>
+            </div>
+
+            <div class="card reveal">
+              <div class="card__body">
+                <div class="stat-card__number" data-count="150" style="font-size: var(--text-4xl); color: var(--color-blue); margin-bottom: var(--space-2);">0<span class="stat-card__suffix" style="color: var(--color-blue);">+</span></div>
+                <h4 class="card__title">Students in Research</h4>
+                <p class="card__text">Capstone students, course participants, experiment volunteers, and summer interns directly engaged in research activities.</p>
+              </div>
+            </div>
+
+            <div class="card reveal">
+              <div class="card__body">
+                <div class="stat-card__number" data-count="2000" style="font-size: var(--text-4xl); color: var(--pillar-makerspace); margin-bottom: var(--space-2);">0<span class="stat-card__suffix" style="color: var(--pillar-makerspace);">+</span></div>
+                <h4 class="card__title">K-12 &amp; Community Outreach</h4>
+                <p class="card__text">School students reached through workshops, orientation sessions, and community events.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           DEPLOYED SYSTEMS
+           ═══════════════════════════════════════ -->
+      <section class="section">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 class="section__title">Deployed Systems</h2>
+            <p class="section__subtitle">Research that has moved from the lab to real-world deployment.</p>
+          </div>
+
+          <div class="grid grid--2 reveal-stagger" style="gap: var(--space-5); margin-top: var(--space-8);">
+
+            <article class="project-list-card reveal">
+              <div class="project-list-card__body">
+                <h3 class="project-list-card__title">BharatSim for National AIDS Control Organisation</h3>
+                <p class="project-list-card__desc">Agent-based modelling platform deployed for epidemic simulation and policy planning.</p>
+                <span class="tag tag--sm">BharatSim</span>
+              </div>
+            </article>
+
+            <article class="project-list-card reveal">
+              <div class="project-list-card__body">
+                <h3 class="project-list-card__title">PRISM</h3>
+                <p class="project-list-card__desc">Physician Rules Integrated with Small LLMs — diagnostic support system for abdominal pain, integrating clinical rules with language models.</p>
+                <span class="tag tag--sm">CHART</span>
+              </div>
+            </article>
+
+            <article class="project-list-card reveal">
+              <div class="project-list-card__body">
+                <h3 class="project-list-card__title">IndiaMediaLens</h3>
+                <p class="project-list-card__desc">Computational analysis platform for studying Indian media coverage patterns, framing, and representation.</p>
+                <span class="tag tag--sm">AI@Ashoka</span>
+              </div>
+            </article>
+
+            <article class="project-list-card reveal">
+              <div class="project-list-card__body">
+                <h3 class="project-list-card__title">BOOP &amp; SocraticAI</h3>
+                <p class="project-list-card__desc">Formal methods tool and scaffolded LLM tutor deployed in introductory CS courses at Ashoka University.</p>
+                <span class="tag tag--sm">AI@Ashoka</span>
+              </div>
+            </article>
+
+            <article class="project-list-card reveal">
+              <div class="project-list-card__body">
+                <h3 class="project-list-card__title">Indian Recipe Dialogue System (IRDS)</h3>
+                <p class="project-list-card__desc">Conversational system for Indian food and nutrition queries with voice interaction and vernacular language support.</p>
+                <span class="tag tag--sm">CHART</span>
+              </div>
+            </article>
+
+            <article class="project-list-card reveal">
+              <div class="project-list-card__body">
+                <h3 class="project-list-card__title">Covalent Magnetic Tweezers</h3>
+                <p class="project-list-card__desc">Custom-built single-molecule force spectroscopy instrument — described as unique in India. Custom C++/Python hybrid software stack.</p>
+                <span class="tag tag--sm">Makerspace</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           AWARDS & RECOGNITION
+           ═══════════════════════════════════════ -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 class="section__title">Awards &amp; Recognition</h2>
+          </div>
+
+          <div class="grid grid--2 reveal-stagger" style="gap: var(--space-5); margin-top: var(--space-8);">
+
+            <article class="card reveal" style="border-left: 3px solid var(--color-red);">
+              <div class="card__body">
+                <span class="card__eyebrow">CHART</span>
+                <h4 class="card__title">INFUSE Promising Innovation Award</h4>
+                <p class="card__text">SmartDiet project recognized for promising innovation in food and nutrition technology.</p>
+              </div>
+            </article>
+
+            <article class="card reveal" style="border-left: 3px solid var(--color-blue);">
+              <div class="card__body">
+                <span class="card__eyebrow">AI@Ashoka</span>
+                <h4 class="card__title">Schmidt AI for Science Fellowship</h4>
+                <p class="card__text">Meghna Agarwala awarded the Schmidt AI for Science Fellowship at the University of Oxford.</p>
+              </div>
+            </article>
+
+            <article class="card reveal" style="border-left: 3px solid var(--color-navy);">
+              <div class="card__body">
+                <span class="card__eyebrow">AI@Ashoka</span>
+                <h4 class="card__title">India-AI Casebook Selection</h4>
+                <p class="card__text">CS Pedagogy project selected as a case study in the Ministry of Electronics and Information Technology's Casebook on the Real-World Impact of AI in Education.</p>
+              </div>
+            </article>
+
+            <article class="card reveal" style="border-left: 3px solid var(--pillar-makerspace);">
+              <div class="card__body">
+                <span class="card__eyebrow">Makerspace</span>
+                <h4 class="card__title">Meera Memorial Paper Reading — 3rd Place</h4>
+                <p class="card__text">Table Top Experiments undergraduate interns recognized at the Meera Memorial Paper Reading Competition.</p>
+              </div>
+            </article>
+
+            <article class="card reveal" style="border-left: 3px solid var(--pillar-makerspace);">
+              <div class="card__body">
+                <span class="card__eyebrow">Makerspace</span>
+                <h4 class="card__title">Cell Press Technology of the Month</h4>
+                <p class="card__text">The Covalent Magnetic Tweezers instrument featured as Technology of the Month by Cell Press.</p>
+              </div>
+            </article>
+
+            <article class="card reveal" style="border-left: 3px solid var(--pillar-cyber);">
+              <div class="card__body">
+                <span class="card__eyebrow">Cybersecurity</span>
+                <h4 class="card__title">Best Paper Award — SPACE 2023</h4>
+                <p class="card__text">Post-Quantum Cryptography research recognized with the Best Paper Award at the International Conference on Security, Privacy, and Applied Cryptographic Engineering.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           STUDENT OUTCOMES
+           ═══════════════════════════════════════ -->
+      <section class="section">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 class="section__title">Student Trajectories</h2>
+            <p class="section__subtitle">Lab alumni going on to prestigious programs worldwide.</p>
+          </div>
+
+          <div class="grid grid--3 reveal-stagger" style="gap: var(--space-5); margin-top: var(--space-8);">
+
+            <article class="card reveal">
+              <div class="card__body">
+                <h4 class="card__title">Simar Randhawa</h4>
+                <p class="card__text" style="margin-bottom: var(--space-2);">Trained through the Table Top Experiments project as an undergraduate intern.</p>
+                <p style="font-size: var(--text-sm); font-weight: var(--weight-semibold); color: var(--color-navy);">ANU Future Research Talent Award, Australian National University</p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__body">
+                <h4 class="card__title">Drishana Kundu</h4>
+                <p class="card__text" style="margin-bottom: var(--space-2);">Trained through the Table Top Experiments project as an undergraduate intern.</p>
+                <p style="font-size: var(--text-sm); font-weight: var(--weight-semibold); color: var(--color-navy);">GIST South Korea PhD Program</p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__body">
+                <h4 class="card__title">Pranit Sinha</h4>
+                <p class="card__text" style="margin-bottom: var(--space-2);">Research assistant on the Biomarker Discovery project.</p>
+                <p style="font-size: var(--text-sm); font-weight: var(--weight-semibold); color: var(--color-navy);">MS at McGill University</p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__body">
+                <h4 class="card__title">Subhas Chandra Bera</h4>
+                <p class="card__text" style="margin-bottom: var(--space-2);">Postdoctoral researcher on the Covalent Magnetic Tweezers project.</p>
+                <p style="font-size: var(--text-sm); font-weight: var(--weight-semibold); color: var(--color-navy);">Secured independent DBT grant as Principal Investigator</p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__body">
+                <h4 class="card__title">Swapnanil Mukherjee</h4>
+                <p class="card__text" style="margin-bottom: var(--space-2);">Undergraduate researcher on the Multimodal Food Computing project.</p>
+                <p style="font-size: var(--text-sm); font-weight: var(--weight-semibold); color: var(--color-navy);">Published at EMNLP (A* conference) as a 4th-year undergraduate</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           MEDIA COVERAGE
+           ═══════════════════════════════════════ -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 class="section__title">Media Coverage</h2>
+            <p class="section__subtitle">Lab research featured in 25+ national and international media outlets.</p>
+          </div>
+
+          <div class="reveal" style="margin-top: var(--space-8);">
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center;">
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">BBC</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">CNBC-TV18</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">NDTV</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Nature India</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Sydney Morning Herald</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">The Sun</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Yahoo News</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">MoneyControl</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">IndiaSpend</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">The Statesman</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Mid-Day</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">The Week</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Medical Buyer</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">The Tribune</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">India New England News</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">BBC Afrique</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Brisbane Times</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Daily Star</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">AOL</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">IANS Live</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">ProKerala</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">IndiaMedToday</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">DT Next</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Social News XYZ</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">India News Network</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">NewsBytes</span>
+              <span class="tag" style="font-size: var(--text-sm); padding: var(--space-2) var(--space-4);">Observer Voice</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section">
+        <div class="container text-center">
+          <div class="reveal">
+            <h3 style="margin-bottom: var(--space-4);">See the Research Behind the Numbers</h3>
+            <p style="color: var(--color-text-secondary); margin-bottom: var(--space-6);">
+              Explore our publications and active projects.
+            </p>
+            <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+              <a href="publications.html" class="btn btn--primary">Publications</a>
+              <a href="research.html" class="btn btn--secondary">Research</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img src="../src/assets/images/logos/lab-logo.png" alt="Lab Logo" class="footer__brand-logo">
+            <p class="footer__brand-text">
+              Advancing interdisciplinary research in AI, health, fabrication, and beyond at Ashoka University.
+            </p>
+            <div class="footer__brand-partner">
+              <span>Supported by</span>
+              <img src="../src/assets/images/logos/mphasis-foundation.png" alt="Mphasis F1 Foundation">
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading">Navigate</h4>
+            <div class="footer__links">
+              <a href="../index.html" class="footer__link">Home</a>
+              <a href="about.html" class="footer__link">About</a>
+              <a href="research.html" class="footer__link">Research</a>
+              <a href="people.html" class="footer__link">People</a>
+              <a href="publications.html" class="footer__link">Publications</a>
+              <a href="makerspace.html" class="footer__link">Makerspace</a>
+              <a href="news.html" class="footer__link">News & Events</a>
+              <a href="impact.html" class="footer__link">Impact</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading">Research</h4>
+            <div class="footer__links">
+              <a href="pillar.html?pillar=ai" class="footer__pillar-link"><span class="footer__pillar-dot" style="background-color: var(--pillar-ai);"></span>AI@Ashoka</a>
+              <a href="pillar.html?pillar=bharatsim" class="footer__pillar-link"><span class="footer__pillar-dot" style="background-color: var(--pillar-bharatsim);"></span>BharatSim</a>
+              <a href="pillar.html?pillar=chart" class="footer__pillar-link"><span class="footer__pillar-dot" style="background-color: var(--pillar-chart);"></span>CHART</a>
+              <a href="pillar.html?pillar=cyber" class="footer__pillar-link"><span class="footer__pillar-dot" style="background-color: var(--pillar-cyber);"></span>Cybersecurity</a>
+              <a href="pillar.html?pillar=makerspace" class="footer__pillar-link"><span class="footer__pillar-dot" style="background-color: var(--pillar-makerspace);"></span>Makerspace</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading">Contact</h4>
+            <div>
+              <div class="footer__contact-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M2 3l6 5 6-5"/></svg>
+                <a href="mailto:mphasis.lab@ashoka.edu.in" style="color: rgba(255,255,255,0.8);">mphasis.lab@ashoka.edu.in</a>
+              </div>
+              <div class="footer__contact-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6.7C14 11.3 8 15.3 8 15.3S2 11.3 2 6.7a6 6 0 1 1 12 0z"/><circle cx="8" cy="6.7" r="2"/></svg>
+                <span>Ashoka University<br>Sonipat, Haryana, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">&copy; 2026 Mphasis AI & Applied Tech Lab, Ashoka University. All rights reserved.</p>
+          <div class="footer__bottom-links">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../src/data/projects.js"></script>
+  <script src="../src/data/people.js"></script>
+  <script src="../src/data/publications.js"></script>
+  <script src="../src/data/pillars.js"></script>
+  <script src="../src/vendor/gsap.min.js"></script>
+  <script src="../src/vendor/ScrollTrigger.min.js"></script>
+  <script src="../src/js/gsap-animations.js"></script>
+  <script src="../src/js/main.js"></script>
+  <script src="../src/js/search.js"></script>
+  <script src="/src/js/page-canvases.js"></script>
+</body>
+</html>

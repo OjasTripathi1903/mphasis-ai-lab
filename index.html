@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mphasis AI & Applied Tech Lab at Ashoka University — Advancing interdisciplinary research in AI, health, fabrication, and beyond at Ashoka University.">
+  <meta name="theme-color" content="#1B2A4A">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mphasis AI & Applied Tech Lab | Ashoka University">
+  <meta property="og:description" content="Advancing interdisciplinary research in AI, health, fabrication, and beyond at Ashoka University.">
+  <meta property="og:type" content="website">
+
+  <title>Mphasis AI & Applied Tech Lab | Ashoka University</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/assets/images/logos/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/assets/images/logos/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/footer.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/animations.css">
+  <link rel="stylesheet" href="src/css/utilities.css">
+  <link rel="stylesheet" href="src/css/search.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
+
+  <div class="page">
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" hidden>
+      <div class="search-overlay__backdrop"></div>
+      <div class="search-overlay__panel">
+        <div class="search-overlay__header">
+          <div class="search-overlay__input-wrapper">
+            <svg class="search-overlay__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/></svg>
+            <input type="search" class="search-overlay__input" id="search-input" placeholder="Search projects, people, publications..." autocomplete="off">
+            <kbd class="search-overlay__kbd">ESC</kbd>
+          </div>
+        </div>
+        <div class="search-overlay__results" id="search-results" aria-live="polite">
+          <div class="search-overlay__empty">
+            <p class="search-overlay__empty-text">Type to search across projects, people, and publications</p>
+          </div>
+        </div>
+        <div class="search-overlay__footer">
+          <span><kbd>\u2318</kbd><kbd>K</kbd> to toggle</span>
+          <span><kbd>\u2191</kbd><kbd>\u2193</kbd> to navigate</span>
+          <span><kbd>Enter</kbd> to select</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════
+         HEADER
+         ════════════════════════════════════════ -->
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <a href="/" class="header__logo" aria-label="Mphasis AI & Applied Tech Lab — Home">
+          <img src="src/assets/images/logos/lab-logo.png" alt="Mphasis AI & Applied Tech Lab Logo">
+        </a>
+
+        <nav class="nav" role="navigation" aria-label="Primary navigation">
+          <a href="/" class="nav__link nav__link--active">Home</a>
+          <a href="/pages/about.html" class="nav__link">About</a>
+          <a href="/pages/research.html" class="nav__link">Research</a>
+          <a href="/pages/people.html" class="nav__link">People</a>
+          <a href="/pages/publications.html" class="nav__link">Publications</a>
+          <a href="/pages/makerspace.html" class="nav__link">Makerspace</a>
+          <a href="/pages/news.html" class="nav__link">News & Events</a>
+          <a href="/pages/impact.html" class="nav__link">Impact</a>
+          <a href="/pages/contact.html" class="nav__link">Contact</a>
+        </nav>
+
+        <div class="header__actions">
+          <button class="header__search-trigger" aria-label="Search" aria-expanded="false" aria-controls="search-overlay">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/></svg>
+          </button>
+          <button class="header__menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="/" class="nav-mobile__link nav-mobile__link--active">Home</a>
+      <a href="/pages/about.html" class="nav-mobile__link">About</a>
+      <a href="/pages/research.html" class="nav-mobile__link">Research</a>
+      <a href="/pages/people.html" class="nav-mobile__link">People</a>
+      <a href="/pages/publications.html" class="nav-mobile__link">Publications</a>
+      <a href="/pages/makerspace.html" class="nav-mobile__link">Makerspace</a>
+      <a href="/pages/news.html" class="nav-mobile__link">News & Events</a>
+      <a href="/pages/impact.html" class="nav-mobile__link">Impact</a>
+      <a href="/pages/contact.html" class="nav-mobile__link">Contact</a>
+    </nav>
+
+    <!-- ════════════════════════════════════════
+         MAIN CONTENT
+         ════════════════════════════════════════ -->
+    <main class="page__content" id="main-content" role="main">
+
+      <!-- ── HERO ── -->
+      <section class="hero">
+        <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero__grain" aria-hidden="true"></div>
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__badge reveal">
+              <span class="hero__badge-dot"></span>
+              Ashoka University
+            </div>
+            <h1 class="hero__title reveal">Mphasis AI &amp;<br>Applied Tech Lab</h1>
+            <p class="hero__tagline reveal">
+              Pioneering <span class="morph-text" data-words='["Artificial Intelligence","Health Simulation","Computational Medicine","Cybersecurity","Digital Fabrication"]'>Artificial Intelligence</span> at Ashoka University
+            </p>
+            <p class="hero__description reveal">
+              25+ research projects across five pillars — advancing interdisciplinary research in AI, health, fabrication, and beyond.
+            </p>
+            <div class="hero__actions reveal">
+              <a href="/pages/research.html" class="btn btn--primary btn--lg">
+                Explore Research
+                <svg class="btn__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h10M11 6l4 4-4 4"/></svg>
+              </a>
+              <a href="/pages/about.html" class="btn btn--secondary btn--lg">About the Lab</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TICKER ── -->
+      <div class="ticker" aria-label="Research themes">
+        <div class="ticker__track">
+          <span class="ticker__item">AI Pedagogy</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Epidemiological Modeling</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Computational Health</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Climate Science</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Digital Humanities</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Materials Science</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Biodiversity &amp; Conservation</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Digital Fabrication</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Post-Quantum Cryptography</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="ticker__item">AI Pedagogy</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Epidemiological Modeling</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Computational Health</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Climate Science</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Digital Humanities</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Materials Science</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Biodiversity &amp; Conservation</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Digital Fabrication</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+          <span class="ticker__item">Post-Quantum Cryptography</span>
+          <span class="ticker__separator" aria-hidden="true">&bull;</span>
+        </div>
+      </div>
+
+      <!-- ── KEY METRICS ── -->
+      <section class="section section--sm">
+        <div class="container">
+          <div class="stats-grid reveal-stagger">
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="25">0<span class="stat-card__suffix">+</span></div>
+              <div class="stat-card__label">Research Projects</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="30">0<span class="stat-card__suffix">+</span></div>
+              <div class="stat-card__label">Publications</div>
+            </div>
+            <div class="stat-card reveal">
+              <div class="stat-card__number" data-count="5">0</div>
+              <div class="stat-card__label">Research Pillars</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FEATURED RESEARCH SPOTLIGHT ── -->
+      <section class="section section--dark section--lg spotlight" id="spotlight">
+        <div class="container">
+          <div class="section__header reveal">
+            <span class="section__eyebrow">// Featured Research</span>
+            <h2 class="section__title">Spotlight</h2>
+          </div>
+
+          <div class="spotlight__list reveal-stagger">
+
+            <a href="/pages/project.html?id=bharatsim-v2" class="spotlight__strip reveal" data-pillar="bharatsim">
+              <div class="spotlight__strip-inner">
+                <div class="spotlight__meta">
+                  <span class="spotlight__pillar-dot" style="background-color: var(--pillar-bharatsim);"></span>
+                  <span class="spotlight__pillar-name">BharatSim</span>
+                </div>
+                <h3 class="spotlight__project-name">India-Scale Epidemic Simulation</h3>
+                <p class="spotlight__project-desc">Agent-based modelling framework deployed to NACO for HIV prediction — covered by BBC, NDTV, and Nature India.</p>
+              </div>
+              <span class="spotlight__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15L15 5M15 5H7M15 5v8"/></svg>
+              </span>
+            </a>
+
+            <a href="/pages/project.html?id=oncomark" class="spotlight__strip reveal" data-pillar="chart">
+              <div class="spotlight__strip-inner">
+                <div class="spotlight__meta">
+                  <span class="spotlight__pillar-dot" style="background-color: var(--pillar-chart);"></span>
+                  <span class="spotlight__pillar-name">CHART</span>
+                </div>
+                <h3 class="spotlight__project-name">OncoMark: Cancer Diagnostics AI</h3>
+                <p class="spotlight__project-desc">AI framework quantifying cancer hallmarks across millions of single cells — published in Nature Communications Biology.</p>
+              </div>
+              <span class="spotlight__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15L15 5M15 5H7M15 5v8"/></svg>
+              </span>
+            </a>
+
+            <a href="/pages/project.html?id=world-food-atlas" class="spotlight__strip reveal" data-pillar="chart">
+              <div class="spotlight__strip-inner">
+                <div class="spotlight__meta">
+                  <span class="spotlight__pillar-dot" style="background-color: var(--pillar-chart);"></span>
+                  <span class="spotlight__pillar-name">CHART</span>
+                </div>
+                <h3 class="spotlight__project-name">World Food Atlas</h3>
+                <p class="spotlight__project-desc">Multimodal food computing platform mapping global cuisines through AI — ingredients, recipes, and nutritional analysis at scale.</p>
+              </div>
+              <span class="spotlight__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15L15 5M15 5H7M15 5v8"/></svg>
+              </span>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── RESEARCH PILLARS ── -->
+      <section class="section section--alt" id="pillars">
+        <div class="container">
+          <div class="section__header reveal">
+            <span class="section__eyebrow">Research</span>
+            <h2 class="section__title">Five Pillars of Innovation</h2>
+            <p class="section__description">
+              Our research spans five interconnected pillars, each addressing critical challenges through technology and interdisciplinary collaboration.
+            </p>
+          </div>
+
+          <div class="pillar-grid reveal-stagger">
+
+            <!-- AI@Ashoka -->
+            <a href="/pages/pillar.html?pillar=ai" class="pillar-card reveal" data-pillar="ai">
+              <div class="pillar-card__header">
+                <div class="pillar-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><path d="M5.6 5.6l2.9 2.9M15.5 15.5l2.9 2.9M18.4 5.6l-2.9 2.9M8.5 15.5l-2.9 2.9"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="pillar-card__title">AI@Ashoka</h3>
+              <p class="pillar-card__description">
+                Advancing artificial intelligence research across education, health, environment, humanities, and fundamental sciences.
+              </p>
+              <span class="pillar-card__arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H5M12 4v7"/></svg>
+              </span>
+            </a>
+
+            <!-- BharatSim -->
+            <a href="/pages/pillar.html?pillar=bharatsim" class="pillar-card reveal" data-pillar="bharatsim">
+              <div class="pillar-card__header">
+                <div class="pillar-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12c2-3 4-3 6 0s4 3 6 0 4-3 6 0"/><path d="M2 7c2-3 4-3 6 0s4 3 6 0 4-3 6 0" opacity="0.4"/><path d="M2 17c2-3 4-3 6 0s4 3 6 0 4-3 6 0" opacity="0.4"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="pillar-card__title">BharatSim</h3>
+              <p class="pillar-card__description">
+                India-scale agent-based simulation framework for epidemiological modeling and public health policy planning.
+              </p>
+              <span class="pillar-card__arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H5M12 4v7"/></svg>
+              </span>
+            </a>
+
+            <!-- CHART -->
+            <a href="/pages/pillar.html?pillar=chart" class="pillar-card reveal" data-pillar="chart">
+              <div class="pillar-card__header">
+                <div class="pillar-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 12h4l3-6 4 12 3-6h4"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="pillar-card__title">CHART</h3>
+              <p class="pillar-card__description">
+                Centre for Health Analytics Research and Trends — clinical AI, food computing, and cancer diagnostics.
+              </p>
+              <span class="pillar-card__arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H5M12 4v7"/></svg>
+              </span>
+            </a>
+
+            <!-- Cybersecurity -->
+            <a href="/pages/pillar.html?pillar=cyber" class="pillar-card reveal" data-pillar="cyber">
+              <div class="pillar-card__header">
+                <div class="pillar-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3l8 4v5c0 5.5-3.8 10.2-8 12-4.2-1.8-8-6.5-8-12V7l8-4z"/><path d="M9 12l2 2 4-4"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="pillar-card__title">Cybersecurity</h3>
+              <p class="pillar-card__description">
+                Post-quantum cryptography research to develop encryption systems resilient against quantum computing threats.
+              </p>
+              <span class="pillar-card__arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H5M12 4v7"/></svg>
+              </span>
+            </a>
+
+            <!-- Makerspace -->
+            <a href="/pages/pillar.html?pillar=makerspace" class="pillar-card reveal" data-pillar="makerspace">
+              <div class="pillar-card__header">
+                <div class="pillar-card__icon">
+                  <img src="src/assets/images/logos/makerspace-logo.png" alt="Makerspace logo">
+                </div>
+              </div>
+              <h3 class="pillar-card__title">Makerspace</h3>
+              <p class="pillar-card__description">
+                Digital fabrication, maker education, and hands-on innovation — from table-top manufacturing to pedagogical tools.
+              </p>
+              <span class="pillar-card__arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H5M12 4v7"/></svg>
+              </span>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── IMPACT STORIES ── -->
+      <section class="section section--dark section--lg">
+        <div class="container">
+          <div class="section__header text-center reveal">
+            <span class="section__eyebrow">Impact</span>
+            <h2 class="section__title">Research That Makes Headlines</h2>
+            <p class="section__description">
+              From global media coverage to government recognition — our research creates real-world impact.
+            </p>
+          </div>
+
+          <div class="grid grid--3 reveal-stagger" style="gap: var(--space-5);">
+            <div class="card card--glass reveal">
+              <div class="card__body">
+                <h3 class="card__title">BharatSim: Global Headlines</h3>
+                <p class="card__text">H5N1 avian flu modelling study published in BMC Public Health — covered by BBC, NDTV, Nature India, and 20+ international outlets. Platform also deployed to the National AIDS Control Organization for HIV predictive modelling.</p>
+              </div>
+            </div>
+            <div class="card card--glass reveal">
+              <div class="card__body">
+                <h3 class="card__title">Cancer Diagnostics AI</h3>
+                <p class="card__text">OncoMark — AI framework for quantifying cancer hallmarks across millions of single cells. Published in Communications Biology (Nature portfolio).</p>
+              </div>
+            </div>
+            <div class="card card--glass reveal">
+              <div class="card__body">
+                <h3 class="card__title">Oxford Fellowship</h3>
+                <p class="card__text">Meghna Agarwala won 3-year Schmidt AI for Science Fellowship at Oxford — citing Mphasis-funded pilot data as foundational to her research.</p>
+              </div>
+            </div>
+            <div class="card card--glass reveal">
+              <div class="card__body">
+                <h3 class="card__title">Dengue Drug Discovery</h3>
+                <p class="card__text">From millions of molecules screened computationally to experimental validation of a lead compound showing significant viral inhibition — computation to lab in one year.</p>
+              </div>
+            </div>
+            <div class="card card--glass reveal">
+              <div class="card__body">
+                <h3 class="card__title">RedBrick Hacks III</h3>
+                <p class="card__text">430+ applicants from 91 universities. 60 finalist teams competed across 4 challenge tracks over 48 hours.</p>
+              </div>
+            </div>
+            <div class="card card--glass reveal">
+              <div class="card__body">
+                <h3 class="card__title">Government Recognition</h3>
+                <p class="card__text">AI in Education tools featured in the Ministry of Electronics and Information Technology's India-AI Impact Summit Casebook — launched at Bharat Mandapam, New Delhi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── LATEST NEWS ── -->
+      <section class="section" id="news">
+        <div class="container">
+          <div class="section__header flex flex--between flex--wrap reveal" style="gap: var(--space-4);">
+            <div>
+              <span class="section__eyebrow">Updates</span>
+              <h2 class="section__title">Latest News &amp; Events</h2>
+            </div>
+            <a href="/pages/news.html" class="btn btn--secondary">
+              View All
+              <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h8M8 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+
+          <div class="grid grid--3 reveal-stagger">
+            <article class="card news-card reveal">
+              <div class="card__body">
+                <span class="card__date">February 17, 2026</span>
+                <h3 class="card__title">Lab Featured at India-AI Impact Summit</h3>
+                <p class="card__text">CS Pedagogy project showcased as a case study in the Ministry of Electronics and Information Technology's Casebook on the Real-World Impact of AI in Education, launched at Bharat Mandapam, New Delhi.</p>
+                <span class="tag tag--sm" style="margin-top: var(--space-2);">AI@Ashoka</span>
+              </div>
+            </article>
+
+            <article class="card news-card reveal">
+              <div class="card__body">
+                <span class="card__date">February 6&ndash;8, 2026</span>
+                <h3 class="card__title">RedBrick Hacks III</h3>
+                <p class="card__text">430+ applications from 91 universities. 60 finalist teams competed across 4 challenge tracks over 48 hours at Ashoka University.</p>
+                <span class="tag tag--sm" style="margin-top: var(--space-2);">Makerspace</span>
+              </div>
+            </article>
+
+            <article class="card news-card reveal">
+              <div class="card__body">
+                <span class="card__date">December 2025</span>
+                <h3 class="card__title">PRISM Presented at NeurIPS 2025</h3>
+                <p class="card__text">Conversational AI for clinical diagnosis accepted at the GenAI4Health Workshop at NeurIPS, San Diego — physician-guided LLM for abdominal pain diagnosis.</p>
+                <span class="tag tag--sm" style="margin-top: var(--space-2);">CHART</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ════════════════════════════════════════
+         FOOTER
+         ════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <!-- Brand -->
+          <div class="footer__brand">
+            <img src="src/assets/images/logos/lab-logo.png" alt="Lab Logo" class="footer__brand-logo">
+            <p class="footer__brand-text">
+              Advancing interdisciplinary research in AI, health, fabrication, and beyond at Ashoka University.
+            </p>
+            <div class="footer__brand-partner">
+              <span>Supported by</span>
+              <img src="src/assets/images/logos/mphasis-foundation.png" alt="Mphasis F1 Foundation">
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div>
+            <h4 class="footer__heading">Navigate</h4>
+            <div class="footer__links">
+              <a href="/" class="footer__link">Home</a>
+              <a href="/pages/about.html" class="footer__link">About</a>
+              <a href="/pages/research.html" class="footer__link">Research</a>
+              <a href="/pages/people.html" class="footer__link">People</a>
+              <a href="/pages/publications.html" class="footer__link">Publications</a>
+              <a href="/pages/makerspace.html" class="footer__link">Makerspace</a>
+              <a href="/pages/news.html" class="footer__link">News & Events</a>
+              <a href="/pages/impact.html" class="footer__link">Impact</a>
+            </div>
+          </div>
+
+          <!-- Research Pillars -->
+          <div>
+            <h4 class="footer__heading">Research</h4>
+            <div class="footer__links">
+              <a href="/pages/pillar.html?pillar=ai" class="footer__pillar-link">
+                <span class="footer__pillar-dot" style="background-color: var(--pillar-ai);"></span>
+                AI@Ashoka
+              </a>
+              <a href="/pages/pillar.html?pillar=bharatsim" class="footer__pillar-link">
+                <span class="footer__pillar-dot" style="background-color: var(--pillar-bharatsim);"></span>
+                BharatSim
+              </a>
+              <a href="/pages/pillar.html?pillar=chart" class="footer__pillar-link">
+                <span class="footer__pillar-dot" style="background-color: var(--pillar-chart);"></span>
+                CHART
+              </a>
+              <a href="/pages/pillar.html?pillar=cyber" class="footer__pillar-link">
+                <span class="footer__pillar-dot" style="background-color: var(--pillar-cyber);"></span>
+                Cybersecurity
+              </a>
+              <a href="/pages/pillar.html?pillar=makerspace" class="footer__pillar-link">
+                <span class="footer__pillar-dot" style="background-color: var(--pillar-makerspace);"></span>
+                Makerspace
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="footer__heading">Contact</h4>
+            <div>
+              <div class="footer__contact-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.3 2.7H2.7c-.7 0-1.4.6-1.4 1.3v8c0 .7.6 1.4 1.4 1.4h10.6c.7 0 1.4-.6 1.4-1.4V4c0-.7-.6-1.3-1.4-1.3z"/><path d="M14.7 4L8 8.7 1.3 4"/></svg>
+                <a href="mailto:mphasis.lab@ashoka.edu.in" style="color: rgba(255,255,255,0.8);">mphasis.lab@ashoka.edu.in</a>
+              </div>
+              <div class="footer__contact-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6.7C14 11.3 8 15.3 8 15.3S2 11.3 2 6.7a6 6 0 1 1 12 0z"/><circle cx="8" cy="6.7" r="2"/></svg>
+                <span>Ashoka University<br>Sonipat, Haryana, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">&copy; 2026 Mphasis AI & Applied Tech Lab, Ashoka University. All rights reserved.</p>
+          <div class="footer__bottom-links">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="src/data/projects.js"></script>
+  <script src="src/data/people.js"></script>
+  <script src="src/data/publications.js"></script>
+  <script src="src/data/pillars.js"></script>
+  <script src="src/vendor/gsap.min.js"></script>
+  <script src="src/vendor/ScrollTrigger.min.js"></script>
+  <script src="src/js/gsap-animations.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/search.js"></script>
+</body>
+</html>
